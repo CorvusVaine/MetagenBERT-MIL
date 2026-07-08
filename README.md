@@ -14,11 +14,11 @@ On the other hand, when using MetagenBERT-Local, a clustering algorithm such as 
 As a final step, a DeepSets model can be trained on the representations obtained : either subsamples embeddings or centroids. 
 The theoric pipeline and the computing pipeline can be seen in the figures above.
 
-[![MetagenBERT-Local: The Clustering Architecture. For each metagenome, reads are embedded through the use of a gLLM. For each genome, a subsample of embeddings is used to train a K-means. The centroids of the clusters obtained through K-means are retrieved and used to train a Multiple-Instance Learning DeepSets model to classify tthe dataset.](./MetagenBERT-Local-pipeline.png)](./MetagenBERT-Local-pipeline.pdf)
+[![MetagenBERT-Local: The Clustering Architecture. For each metagenome, reads are embedded through the use of a gLLM. For each genome, a subsample of embeddings is used to train a K-means. The centroids of the clusters obtained through K-means are retrieved and used to train a Multiple-Instance Learning DeepSets model to classify tthe dataset.](./MetagenBERT-local.png)](./MetagenBERT-local.pdf)
 
-[![MetagenBERT-Sub: The Subsampling Architecture. For each metagenome, random reads are selected and embedded through the use of a gLLM. These embeddings are directly used to train a Multiple-Instance Learning DeepSets model to classify the dataset.](./MetagenBERT-Sub-pipeline.png)](./MetagenBERT-Sub-pipeline.pdf)
+[![MetagenBERT-Sub: The Subsampling Architecture. For each metagenome, random reads are selected and embedded through the use of a gLLM. These embeddings are directly used to train a Multiple-Instance Learning DeepSets model to classify the dataset.](./MetagenBERT-sub.png)](./MetagenBERT-sub.pdf)
 
-![Script pipeline](script-pipeline.png)
+![Script pipeline](metagenbert-mil-pipeline.png)
 
 ## Dependencies
 
